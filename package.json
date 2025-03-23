@@ -1,0 +1,48 @@
+{
+  "name": "my-electron-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Satlok Ashram App Manager",
+  "author": "SatlokAshramDevelopers",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder",
+    "build:win": "tsc && vite build && electron-builder --win",
+    "build:mac": "tsc && vite build && electron-builder --mac",
+    "build:linux": "tsc && vite build && electron-builder --linux",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "@tailwindcss/vite": "^4.0.15",
+    "dockerode": "^4.0.4",
+    "keytar": "^7.9.0",
+    "lucide-react": "^0.483.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^4.0.15",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^3.3.35",
+    "@types/node": "^22.13.11",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "^5.2.2",
+    "vite": "^6.2.2",
+    "vite-plugin-electron": "^0.28.6",
+    "vite-plugin-electron-renderer": "^0.14.5"
+  },
+  "main": "dist-electron/main.js"
+}
