@@ -1,30 +1,59 @@
-# React + TypeScript + Vite
+# Docker Container Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An Electron-based desktop application for managing Docker containers. This application provides a user-friendly interface to pull Docker images, manage running containers, and monitor Docker resources.
 
-Currently, two official plugins are available:
+![Application Screenshot](https://upload.wikimedia.org/wikipedia/commons/9/91/Electron_Software_Framework_Logo.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Container Management**: Start, stop, restart, and remove Docker containers
+- **Image Management**: Pull, list, and remove Docker images
+- **Container Monitoring**: View logs and resource usage of running containers
+- **User-friendly Interface**: Intuitive UI for managing Docker operations
+- **Cross-platform**: Works on Windows, macOS, and Linux
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+
+
+### Install from Source
+
+#### Clone the repository:
+  ```bash
+  git clone https://github.com/Rakesh-46-VR/Satlok-Ashram-App-Manager.git
+  
+  cd docker-container-manager
+  ```
+#### Install dependencies:
+  
+  ```bash
+  npm install
+  ```
+
+#### Build the application:
+
+```shellscript
+npm run build
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+#### Start the application:
+
+```shellscript
+npm run preview
+```
+
+## Usage
+### Container Management
+
+1. **View Containers**: The main dashboard displays all running and stopped containers
+2. **Start/Stop Containers**: Use the play/stop buttons to control container state
+3. **Container Details**: Click on a container to view detailed information and logs
+
+### Image Management
+
+1. **Pull Images**: Pull images from Docker Hub or private registries
