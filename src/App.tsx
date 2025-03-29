@@ -12,7 +12,7 @@ interface ModelSelectorProps {
   isLoading: boolean
 }
 
-const SERVER = "docker.sasewa.online"
+const SERVER = import.meta.env.VITE_DOCKER_SOURCE;
 const ID = import.meta.env.VITE_ID;
 const PASSWORD = import.meta.env.VITE_PASSWORD;
 
