@@ -50,9 +50,9 @@ npm run preview
 ## Usage
 ### Container Management
 
-1. **View Containers**: The main dashboard displays all running and stopped containers
-2. **Start/Stop Containers**: Use the play/stop buttons to control container state
-3. **Container Details**: Click on a container to view detailed information and logs
+1. **View Containers**: The main dashboard displays a dropdown to select and view container status
+2. **Start/Stop Containers**: Use the install/run/stop buttons to control container state
+3. **Container Details**: Container details and status are provided so that the user can view the status
 
 ### Image Management
 
