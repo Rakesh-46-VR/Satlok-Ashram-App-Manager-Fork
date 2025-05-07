@@ -1,8 +1,8 @@
 # Docker Container Manager
 
-An Electron-based desktop application for managing Docker containers. This application provides a user-friendly interface to pull Docker images, manage running containers, and monitor Docker resources.
+An Electron-based desktop application for managing Docker containers. This application provides a user-friendly interface to pull Docker images, manage running containers. This application helps to supply docker services to intended users in a organization where we have private docker repository as a hub.
 
-![Application Screenshot](https://upload.wikimedia.org/wikipedia/commons/9/91/Electron_Software_Framework_Logo.svg)
+![image](https://github.com/user-attachments/assets/bd171177-2294-42b6-bd78-2ffadb97f726)
 
 ## Features
 
@@ -50,9 +50,9 @@ npm run preview
 ## Usage
 ### Container Management
 
-1. **View Containers**: The main dashboard displays a dropdown to select and view container status
-2. **Start/Stop Containers**: Use the install/run/stop buttons to control container state
-3. **Container Details**: Container details and status are provided so that the user can view the status
+1. **View Containers**: The main dashboard displays all running and stopped containers
+2. **Start/Stop Containers**: Use the play/stop buttons to control container state
+3. **Container Details**: Click on a container to view detailed information and logs
 
 ### Image Management
 
